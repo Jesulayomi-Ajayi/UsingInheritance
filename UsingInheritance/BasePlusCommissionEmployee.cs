@@ -8,6 +8,7 @@ namespace UsingInheritance
     {
         private decimal baseSalary;
 
+        // six-parameter constructor
         public BasePlusCommissionEmployee(string first, string last, string ssn, decimal sales, decimal rate, decimal salary)
             : base(first, last, ssn, sales, rate)
         {
