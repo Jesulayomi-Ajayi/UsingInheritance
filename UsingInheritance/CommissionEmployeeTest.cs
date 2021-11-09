@@ -21,9 +21,10 @@ namespace UsingInheritance
             employee.GrossSales = 5000.00M; // set gross sales
             employee.CommissionRate = .1M;  // set commission rate
 
-            Console.WriteLine("\n{0}:\n\n{1}", "Updated employee information obtained by ToString", employee);
-            Console.WriteLine("earnings: {0:C}", employee.Earnings());
+            Console.WriteLine();
+            Console.WriteLine();
 
+            employee.EmployeeInfo();
         }
     }
 }

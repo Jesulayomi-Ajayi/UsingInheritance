@@ -37,9 +37,9 @@ namespace UsingInheritance
             return BaseSalary + base.Earnings();
         }
 
-        public override string ToString()
+        public override string EmployeeInfo()
         {
-            return string.Format("base-salaried {0}\nbase salary: {1:C}", base.ToString(), BaseSalary);
+            return base.EmployeeInfo() + "\n" + "Base Salary: " + BaseSalary;
         }
 
     }

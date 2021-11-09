@@ -22,6 +22,7 @@ namespace UsingInheritance
             CommissionRate = rate;
         } // end five-parameter CommissionEmployee constructor
 
+
         public string FirstName
         {
             get
@@ -85,12 +86,15 @@ namespace UsingInheritance
         }// end method Earnings
 
 
-        public override string ToString()
+        public virtual string EmployeeInfo()
         {
-            return string.Format("{0}: {1} {2}\n{3}: {4}\n{5}: {6:C}\n{7}: {8:F2}",
-            "commission employee", FirstName, LastName,
-            "social security number", SocialSecurityNumber,
-            "gross sales", GrossSales, "commission rate", CommissionRate);
-        } // end method ToString
+            return "Employee" + "\n"
+                + "First name: " + FirstName + "\n"
+                + "Last Name: " + LastName + "\n"
+                + "Social Security Number: " + SocialSecurityNumber + "\n"
+                + "Gross Sales: " + GrossSales + "\n"
+                + "Commission Rate: " + CommissionRate + "\n"
+                + "Earnings: " + Earnings();
+        }
     }
 }
