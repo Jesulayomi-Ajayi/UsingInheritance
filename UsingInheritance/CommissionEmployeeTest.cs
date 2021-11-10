@@ -23,8 +23,8 @@ namespace UsingInheritance
 
             Console.WriteLine();
             Console.WriteLine();
+            Console.WriteLine(employee.EmployeeInfo());
 
-            employee.EmployeeInfo();
         }
     }
 }
